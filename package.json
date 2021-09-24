@@ -5,11 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-customizable": "^6.3.0"
   },
   "scripts": {
-    "commit": "cz",
+    "commit": "./node_modules/cz-customizable/standalone.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +26,7 @@
   "homepage": "https://github.com/joyqul/leetcode#readme",
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable/standalone.js"
     }
   }
 }
